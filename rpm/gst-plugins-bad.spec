@@ -30,6 +30,7 @@ BuildRequires: pkgconfig(libgcrypt)
 BuildRequires: pkgconfig(wayland-egl)
 BuildRequires: pkgconfig(wayland-protocols) >= 1.15
 BuildRequires: pkgconfig(glesv2)
+BuildRequires: pkgconfig(aom)
 BuildRequires: pkgconfig(egl)
 BuildRequires: pkgconfig(opus)
 BuildRequires: pkgconfig(libwebp)
@@ -87,7 +88,7 @@ GStreamer Plugins Bad library applications
   -Dpackage-name='SailfishOS GStreamer package plugins (bad set)' \
   -Dpackage-origin='http://sailfishos.org/' -Dorc=enabled \
   -Dintrospection=enabled -Dexamples=disabled -Ddoc=disabled -Dnls=disabled \
-  -Daccurip=disabled -Dadpcmdec=disabled -Dadpcmenc=disabled -Dandroidmedia=disabled -Daom=disabled \
+  -Daccurip=disabled -Dadpcmdec=disabled -Dadpcmenc=disabled -Dandroidmedia=disabled -Daom=enabled \
   -Daes=disabled -Damfcodec=disabled -Dasfmux=disabled -D=assrender=disabled \
   -Daudiofxbad=disabled -Daudiovisualizers=disabled -Dautoconvert=disabled \
   -Dbayer=disabled -Dbluez=disabled -Dbs2b=disabled -Dbz2=disabled -Dchromaprint=disabled \
@@ -149,6 +150,7 @@ rm -f $RPM_BUILD_ROOT%{_libdir}/libgstwayland-%{majorminor}.so*
 %license subprojects/gst-plugins-bad/COPYING
 %{_libdir}/gstreamer-%{majorminor}/libgstaiff.so
 %{_libdir}/gstreamer-%{majorminor}/libgstanalyticsoverlay.so
+%{_libdir}/gstreamer-%{majorminor}/libgstaom.so
 %{_libdir}/gstreamer-%{majorminor}/libgstaudiobuffersplit.so
 %{_libdir}/gstreamer-%{majorminor}/libgstaudiolatency.so
 %{_libdir}/gstreamer-%{majorminor}/libgstaudiomixmatrix.so
