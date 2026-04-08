@@ -53,6 +53,8 @@ BuildRequires: libatomic
 BuildRequires: meson
 BuildRequires: gettext-devel
 
+BuildRequires: pkgconfig(wpe-webkit-2.0)
+
 %description
 GStreamer is a streaming media framework, based on graphs of elements which
 operate on media data.
