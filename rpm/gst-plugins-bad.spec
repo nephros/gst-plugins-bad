@@ -54,6 +54,7 @@ BuildRequires: meson
 BuildRequires: gettext-devel
 
 BuildRequires: pkgconfig(wpe-webkit-2.0)
+BuildRequires: pkgconfig(wpebackend-fdo-1.0)
 
 %description
 GStreamer is a streaming media framework, based on graphs of elements which
