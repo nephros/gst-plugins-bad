@@ -131,7 +131,8 @@ GStreamer Plugins Bad library applications
   -Dwebrtcdsp=disabled -Dwildmidi=disabled -Dwpe=enabled -Dx11=disabled \
   -Dx265=disabled -Dy4m=disabled -Dzbar=disabled -Dcolormanagement=disabled \
   -Dmagicleap=disabled -Dva=disabled -Davtp=disabled -Dmicrodns=disabled \
-  -Dsvthevcenc=disabled -Dzxing=disabled
+  -Dsvthevcenc=disabled -Dzxing=disabled \
+  -Dgstgl=enabled -Dgl=enabled
 
 %meson_build
 
