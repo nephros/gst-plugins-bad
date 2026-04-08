@@ -313,3 +313,4 @@ rm -f $RPM_BUILD_ROOT%{_libdir}/libgstwayland-%{majorminor}.so*
 
 %files wpe
 %{_libdir}/gstreamer-%{majorminor}/libgstwpe.so
+%{_libdir}/gst-plugins-bad/wpe-extension/libgstwpeextension.so
