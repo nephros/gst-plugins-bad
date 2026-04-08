@@ -4,6 +4,8 @@
 %global _vpath_srcdir subprojects/gst-plugins-bad
 %global _vpath_builddir subprojects/gst-plugins-bad/_build
 
+%define _unpackaged_files_terminate_build 0
+
 Summary:     GStreamer streaming media framework "bad" plug-ins
 Name:        %{gstreamer}%{majorminor}-plugins-bad
 Version:     1.24.6
