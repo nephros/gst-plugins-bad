@@ -69,6 +69,13 @@ operate on media data.
 This package contains the development files for the plug-ins that
 are not tested well enough, or the code is not of good enough quality.
 
+%package wpe
+Summary:    GStreamer Plugins Bad WPE
+Requires:   %{gstreamer}1.0-plugins-base = %{version}
+
+%description wpe
+GStreamer Plugins Bad WPE plugin
+
 %package apps
 Summary:    GStreamer Plugins Bad library applications
 Requires:   %{gstreamer}1.0-plugins-base = %{version}
@@ -300,3 +307,6 @@ rm -f $RPM_BUILD_ROOT%{_libdir}/libgstwayland-%{majorminor}.so*
 
 %files apps
 %{_bindir}/gst-transcoder-%{majorminor}
+
+%files wpe
+%{_libdir}/gstreamer-%{majorminor}/libgstwpe.so
