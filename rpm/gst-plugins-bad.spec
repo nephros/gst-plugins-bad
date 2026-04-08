@@ -94,8 +94,9 @@ GStreamer Plugins Bad library applications
 # OBS inserts --auto-features=enabled to verify that every plugin is
 # specified one way or the other. Add this below for testing.
 %meson \
+  --auto-features=disabled \
   -Dpackage-name='SailfishOS GStreamer package plugins (bad set)' \
-  -Dpackage-origin='http://sailfishos.org/' -Dorc=enabled \
+  -Dpackage-origin='http://sailfishos.org/' -Dorc=disabled \
   -Dintrospection=enabled -Dexamples=disabled -Ddoc=disabled -Dnls=disabled \
   -Daccurip=disabled -Dadpcmdec=disabled -Dadpcmenc=disabled -Daom=disabled \
   -Daes=disabled -Damfcodec=disabled -Dasfmux=disabled -D=assrender=disabled \
@@ -103,7 +104,7 @@ GStreamer Plugins Bad library applications
   -Dbayer=disabled -Dbluez=disabled -Dbs2b=disabled -Dbz2=disabled \
   -Dchromaprint=disabled -Dcoloreffects=disabled -Dcurl=disabled -Ddash=disabled \
   -Daja=disabled -Ddc1394=disabled -Dcodec2json=disabled -Dcodecalpha=disabled \
-  -Ddebugutils=enabled -Ddecklink=disabled -D=directfb=disabled -Ddirectshow=disabled \
+  -Ddebugutils=disabled -Ddecklink=disabled -D=directfb=disabled -Ddirectshow=disabled \
   -Ddts=disabled -Ddvb=disabled -Ddvbsuboverlay=disabled -Ddvdspu=disabled \
   -Dfaac=disabled -Dfaad=disabled -Dfaceoverlay=disabled -Dfbdev=disabled \
   -Dfdkaac=disabled -Dfestival=disabled -Dfieldanalysis=disabled \
@@ -121,7 +122,7 @@ GStreamer Plugins Bad library applications
   -Dpcapparse=disabled -Dpnm=disabled -Dqroverlay=disabled -Dqsv=disabled \
   -Dqt6d3d11=disabled \
   -Dremovesilence=disabled -Dresindvd=disabled -Drsvg=disabled -Drtmp=disabled \
-  -Dsctp=enabled -Dsdp=disabled -Dsegmentclip=disabled -Dsiren=disabled \
+  -Dsctp=disabled -Dsdp=disabled -Dsegmentclip=disabled -Dsiren=disabled \
   -Dsmooth=disabled -Dsmoothstreaming=disabled -Dsoundtouch=disabled \
   -Dspandsp=disabled -Dspeed=disabled -Dsrt=disabled -Dsubenc=disabled -Dsvtav1=disabled \
   -Dteletext=disabled -Dtinyalsa=disabled -Dvideofilters=disabled \
