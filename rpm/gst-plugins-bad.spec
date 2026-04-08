@@ -132,7 +132,7 @@ GStreamer Plugins Bad library applications
   -Dx265=disabled -Dy4m=disabled -Dzbar=disabled -Dcolormanagement=disabled \
   -Dmagicleap=disabled -Dva=disabled -Davtp=disabled -Dmicrodns=disabled \
   -Dsvthevcenc=disabled -Dzxing=disabled \
-  -Dgstgl=enabled -Dgl=enabled
+  -Dgl=enabled
 
 %meson_build
 
