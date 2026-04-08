@@ -119,7 +119,7 @@ GStreamer Plugins Bad library applications
   -Dteletext=disabled -Dtests=disabled -Dtinyalsa=disabled -Dvideofilters=disabled \
   -Dvideosignal=disabled -Dvmnc=disabled -Dvoaacenc=disabled \
   -Dvoamrwbenc=disabled -Dvulkan=disabled -Dwasapi=disabled -Dwasapi2=disabled \
-  -Dwebrtcdsp=disabled -Dwildmidi=disabled -Dwpe=disabled -Dx11=disabled \
+  -Dwebrtcdsp=disabled -Dwildmidi=disabled -Dwpe=enabled -Dx11=disabled \
   -Dx265=disabled -Dy4m=disabled -Dzbar=disabled -Dcolormanagement=disabled \
   -Dmagicleap=disabled -Dva=disabled -Davtp=disabled -Dmicrodns=disabled \
   -Dsvthevcenc=disabled -Dzxing=disabled
