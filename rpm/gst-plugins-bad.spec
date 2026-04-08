@@ -313,3 +313,4 @@ rm -rf $RPM_BUILD_ROOT
 
 %files wpe
 %{_libdir}/gstreamer-%{majorminor}/libgstwpe.so
+%{_libdir}/gst-plugins-bad/wpe-extension/libgstwpeextension.so
