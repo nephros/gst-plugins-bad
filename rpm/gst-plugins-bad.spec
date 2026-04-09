@@ -76,7 +76,7 @@ are not tested well enough, or the code is not of good enough quality.
 
 %package wpe
 Summary:    GStreamer Plugins Bad WPE
-Requires:   %{gstreamer}1.0-plugins-base = %{version}
+Requires:   %{gstreamer}1.0-plugins-base
 
 %description wpe
 GStreamer Plugins Bad WPE plugin
