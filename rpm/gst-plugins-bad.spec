@@ -57,6 +57,7 @@ BuildRequires: gettext-devel
 
 BuildRequires: pkgconfig(wpe-webkit-2.0)
 BuildRequires: pkgconfig(wpebackend-fdo-1.0)
+BuildRequires: pkgconfig(aom)
 
 %description
 GStreamer is a streaming media framework, based on graphs of elements which
@@ -130,11 +131,11 @@ GStreamer Plugins Bad library applications
   -Dteletext=disabled -Dtinyalsa=disabled -Dvideofilters=disabled \
   -Dvideosignal=disabled -Dvmnc=disabled -Dvoaacenc=disabled \
   -Dvoamrwbenc=disabled -Dvulkan=disabled -Dwasapi=disabled -Dwasapi2=disabled \
-  -Dwebrtcdsp=disabled -Dwildmidi=disabled -Dwpe=enabled -Dx11=disabled \
+  -Dwebrtcdsp=disabled -Dwildmidi=disabled -Dwpe=disabled -Dx11=disabled \
   -Dx265=disabled -Dy4m=disabled -Dzbar=disabled -Dcolormanagement=disabled \
   -Dmagicleap=disabled -Dva=disabled -Davtp=disabled -Dmicrodns=disabled \
   -Dsvthevcenc=disabled -Dzxing=disabled \
-  -Dgl=enabled
+  -Daom=enabled -Dgl=enabled -Dwpe=enabled
 
 %meson_build
 
