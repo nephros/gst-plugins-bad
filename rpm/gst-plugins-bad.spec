@@ -52,6 +52,11 @@ BuildRequires: libatomic
 %endif
 BuildRequires: meson
 BuildRequires: gettext-devel
+# Bluetooth codecs:
+BuildRequires: pkgconfig(libfreeaptx)
+BuildRequires: pkgconfig(ldacBT-enc)
+BuildRequires: pkgconfig(fdk-aac)
+BuildRequires: pkgconfig(lc3)
 
 %description
 GStreamer is a streaming media framework, based on graphs of elements which
