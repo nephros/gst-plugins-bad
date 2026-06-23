@@ -96,18 +96,18 @@ GStreamer Plugins Bad library applications
   -Ddebugutils=enabled -Ddecklink=disabled -D=directfb=disabled -Ddirectshow=disabled \
   -Ddts=disabled -Ddvb=disabled -Ddvbsuboverlay=disabled -Ddvdspu=disabled \
   -Dfaac=disabled -Dfaad=disabled -Dfaceoverlay=disabled -Dfbdev=disabled \
-  -Dfdkaac=disabled -Dfestival=disabled -Dfieldanalysis=disabled \
+  -Dfdkaac=enabled -Dfestival=disabled -Dfieldanalysis=disabled \
   -Dflite=disabled -Dfluidsynth=disabled -Dfreeverb=disabled -Dfrei0r=disabled \
   -Dgs=disabled -Dgaudieffects=disabled -Dgdp=disabled -Dgeometrictransform=disabled \
   -Dgme=disabled -Dgsm=disabled -Dgtk3=disabled -Did3tag=disabled -Dinter=disabled \
   -Disac=disabled -Dinterlace=disabled -Diqa=disabled -Divfparse=disabled \
-  -Divtc=disabled -Djp2kdecimator=disabled -Dladspa=disabled -Dlc3=disabled \
+  -Divtc=disabled -Djp2kdecimator=disabled -Dladspa=disabled -Dlc3=enabled \
   -Dlcevcdecoder=disabled -Dlcevcencoder=disabled \
-  -Dldac=disabled -Dlibde265=disabled -Dlibrfb=disabled -Dlv2=disabled \
+  -Dldac=enabled -Dlibde265=disabled -Dlibrfb=disabled -Dlv2=disabled \
   -Dmidi=disabled -Dmodplug=disabled -Dmpeg2enc=disabled -Dmpegpsmux=disabled \
   -Dmpegtsmux=disabled -Dmplex=disabled -Dmsdk=disabled -Dmusepack=disabled \
   -Dmxf=disabled -Dneon=disabled -Dnvcomp=disabled -Dnvdswrapper=disabled -Donnx=disabled \
-  -Dopenal=disabled -Dopenaptx=disabled -Dopencv=disabled -Dopenexr=disabled \
+  -Dopenal=disabled -Dopenaptx=enabled -Dopencv=disabled -Dopenexr=disabled \
   -Dopenh264=disabled -Dopenmpt=disabled -Dopenni2=disabled -Dopensles=disabled \
   -Dpcapparse=disabled -Dpnm=disabled -Dqroverlay=disabled -Dqsv=disabled \
   -Dqt6d3d11=disabled \
