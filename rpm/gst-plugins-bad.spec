@@ -199,6 +199,10 @@ rm -f $RPM_BUILD_ROOT%{_libdir}/libgstwayland-%{majorminor}.so*
 %{_libdir}/gstreamer-%{majorminor}/libgstvideoparsersbad.so
 %{_libdir}/gstreamer-%{majorminor}/libgstwebp.so
 %{_libdir}/gstreamer-%{majorminor}/libgstwebrtc.so
+%{_libdir}/gstreamer-%{majorminor}/libgstfdkaac.so
+%{_libdir}/gstreamer-%{majorminor}/libgstlc3.so
+%{_libdir}/gstreamer-%{majorminor}/libgstldac.so
+%{_libdir}/gstreamer-%{majorminor}/libgstopenaptx.so
 %{_libdir}/libgstadaptivedemux-%{majorminor}.so.*
 %{_libdir}/libgstanalytics-%{majorminor}.so.*
 %{_libdir}/libgstbadaudio-%{majorminor}.so.*
