@@ -8,10 +8,10 @@
 
 Summary:     GStreamer streaming media framework "bad" plug-ins
 Name:        %{gstreamer}%{majorminor}-plugins-bad
-Version:     1.24.6
+Version:     1.26.11
 Release:     1
 License:     LGPLv2+
-URL:         http://gstreamer.freedesktop.org/
+URL:         https://github.com/sailfishos/gst-plugins-bad
 Source:      %{name}-%{version}.tar.xz
 Patch1:      0001-Set-video-branch-to-NULL-after-finishing-video-recor.patch
 Patch2:      0002-Keep-video-branch-in-NULL-state.patch
@@ -101,11 +101,11 @@ GStreamer Plugins Bad library applications
   -Dpackage-name='SailfishOS GStreamer package plugins (bad set)' \
   -Dpackage-origin='http://sailfishos.org/' -Dorc=disabled \
   -Dintrospection=enabled -Dexamples=disabled -Ddoc=disabled -Dnls=disabled \
-  -Daccurip=disabled -Dadpcmdec=disabled -Dadpcmenc=disabled -Daom=disabled \
+  -Daccurip=disabled -Dadpcmdec=disabled -Dadpcmenc=disabled -Dandroidmedia=disabled -Daom=disabled \
   -Daes=disabled -Damfcodec=disabled -Dasfmux=disabled -D=assrender=disabled \
   -Daudiofxbad=disabled -Daudiovisualizers=disabled -Dautoconvert=disabled \
-  -Dbayer=disabled -Dbluez=disabled -Dbs2b=disabled -Dbz2=disabled \
-  -Dchromaprint=disabled -Dcoloreffects=disabled -Dcurl=disabled -Ddash=disabled \
+  -Dbayer=disabled -Dbluez=disabled -Dbs2b=disabled -Dbz2=disabled -Dchromaprint=disabled \
+  -Dcoloreffects=disabled -Dcuda-nvmm=disabled -Dcurl=disabled -Ddash=disabled \
   -Daja=disabled -Ddc1394=disabled -Dcodec2json=disabled -Dcodecalpha=disabled \
   -Ddebugutils=disabled -Ddecklink=disabled -D=directfb=disabled -Ddirectshow=disabled \
   -Ddts=disabled -Ddvb=disabled -Ddvbsuboverlay=disabled -Ddvdspu=disabled \
@@ -116,10 +116,11 @@ GStreamer Plugins Bad library applications
   -Dgme=disabled -Dgsm=disabled -Dgtk3=disabled -Did3tag=disabled -Dinter=disabled \
   -Disac=disabled -Dinterlace=disabled -Diqa=disabled -Divfparse=disabled \
   -Divtc=disabled -Djp2kdecimator=disabled -Dladspa=disabled -Dlc3=disabled \
+  -Dlcevcdecoder=disabled -Dlcevcencoder=disabled \
   -Dldac=disabled -Dlibde265=disabled -Dlibrfb=disabled -Dlv2=disabled \
   -Dmidi=disabled -Dmodplug=disabled -Dmpeg2enc=disabled -Dmpegpsmux=disabled \
   -Dmpegtsmux=disabled -Dmplex=disabled -Dmsdk=disabled -Dmusepack=disabled \
-  -Dmxf=disabled -Dneon=disabled -Donnx=disabled \
+  -Dmxf=disabled -Dneon=disabled -Dnvcomp=disabled -Dnvdswrapper=disabled -Donnx=disabled \
   -Dopenal=disabled -Dopenaptx=disabled -Dopencv=disabled -Dopenexr=disabled \
   -Dopenh264=disabled -Dopenmpt=disabled -Dopenni2=disabled -Dopensles=disabled \
   -Dpcapparse=disabled -Dpnm=disabled -Dqroverlay=disabled -Dqsv=disabled \
@@ -127,8 +128,9 @@ GStreamer Plugins Bad library applications
   -Dremovesilence=disabled -Dresindvd=disabled -Drsvg=disabled -Drtmp=disabled \
   -Dsctp=disabled -Dsdp=disabled -Dsegmentclip=disabled -Dsiren=disabled \
   -Dsmooth=disabled -Dsmoothstreaming=disabled -Dsoundtouch=disabled \
-  -Dspandsp=disabled -Dspeed=disabled -Dsrt=disabled -Dsubenc=disabled -Dsvtav1=disabled \
-  -Dteletext=disabled -Dtinyalsa=disabled -Dvideofilters=disabled \
+  -Dspandsp=disabled -Dspeed=disabled -Dsrt=disabled -Dsubenc=disabled \
+  -Dsvtav1=disabled -Dsvtjpegxs=disabled \
+  -Dteletext=disabled -Dtests=disabled -Dtinyalsa=disabled -Dvideofilters=disabled \
   -Dvideosignal=disabled -Dvmnc=disabled -Dvoaacenc=disabled \
   -Dvoamrwbenc=disabled -Dvulkan=disabled -Dwasapi=disabled -Dwasapi2=disabled \
   -Dwebrtcdsp=disabled -Dwildmidi=disabled -Dwpe=disabled -Dx11=disabled \
@@ -151,9 +153,6 @@ rm -f $RPM_BUILD_ROOT%{_libdir}/*.a
 # remove waylandsink. It does not run because we do not support all the interfaces it needs.
 rm -f $RPM_BUILD_ROOT%{_libdir}/gstreamer-%{majorminor}/libgstwaylandsink.so
 rm -f $RPM_BUILD_ROOT%{_libdir}/libgstwayland-%{majorminor}.so*
-
-%clean
-rm -rf $RPM_BUILD_ROOT
 
 %post -p /sbin/ldconfig
 %postun -p /sbin/ldconfig
